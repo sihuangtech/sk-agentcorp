@@ -1,6 +1,7 @@
 {
+  "display_name": "OpenAI",
   "api_base": "https://api.openai.com/v1",
-  "default_model": "gpt-5.4-pro",
+  "default_model": "gpt-5.4",
   "supported_models": [
     "gpt-5.4-pro",
     "gpt-5.4-thinking",

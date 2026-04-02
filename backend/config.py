@@ -29,15 +29,31 @@ class Settings(BaseSettings):
     # ── Database ─────────────────────────────────────────────────────
     database_url: str = "sqlite+aiosqlite:///./sk-agentcorp.db"
 
-    # ── LLM Providers ────────────────────────────────────────────────
-    openai_api_key: str = ""
-    anthropic_api_key: str = ""
-    ollama_base_url: str = "http://localhost:11434"
-    groq_api_key: str = ""
-    xai_api_key: str = ""
+    @property
+    def default_llm_provider(self) -> str:
+        """Load the default provider from JSON config."""
+        path = Path(__file__).parent / "llm_configs" / "default_model.json"
+        if path.exists():
+            try:
+                import json
+                with open(path, "r", encoding="utf-8") as f:
+                    return json.load(f).get("provider", "openai")
+            except Exception:
+                pass
+        return "openai"
 
-    default_llm_provider: Literal["openai", "anthropic", "ollama", "groq", "xai"] = "openai"
-    default_llm_model: str = "gpt-4o"
+    @property
+    def default_llm_model(self) -> str:
+        """Load the default model from JSON config."""
+        path = Path(__file__).parent / "llm_configs" / "default_model.json"
+        if path.exists():
+            try:
+                import json
+                with open(path, "r", encoding="utf-8") as f:
+                    return json.load(f).get("model", "gpt-5.4-pro")
+            except Exception:
+                pass
+        return "gpt-5.4-pro"
 
     # ── Security ─────────────────────────────────────────────────────
     api_secret_key: str = "change-me-to-a-random-string"

@@ -1,8 +1,10 @@
 {
+  "display_name": "StepFun",
   "api_base": "https://api.stepfun.com/v1",
-  "default_model": "step-2-16k",
+  "default_model": "step-2-pro",
   "supported_models": [
-    "step-2-16k",
+    "step-2-pro",
+    "step-1.5-vision",
     "step-1v-8k"
   ]
 }

@@ -1,9 +1,11 @@
 {
+  "display_name": "Baidu (ERNIE)",
   "api_base": "https://qianfan.baidubce.com/v2",
-  "default_model": "ernie-4.0-pro-8k",
+  "default_model": "ernie-5.0-thinking-latest",
   "supported_models": [
-    "ernie-4.0-pro-8k",
-    "ernie-3.5-8k",
+    "ernie-5.0-thinking-latest",
+    "ernie-5.0-thinking-preview",
+    "ernie-4.0-turbo-8k",
     "ernie-speed-128k"
   ]
 }

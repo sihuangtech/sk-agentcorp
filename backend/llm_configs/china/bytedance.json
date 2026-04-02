@@ -1,8 +1,10 @@
 {
+  "display_name": "ByteDance (Doubao)",
   "api_base": "https://ark.cn-beijing.volces.com/api/v3",
-  "default_model": "doubao-pro-128k",
+  "default_model": "doubao-1.5-pro-32k",
   "supported_models": [
-    "doubao-pro-128k",
-    "doubao-lite-32k"
+    "doubao-1.5-pro-32k",
+    "doubao-1.5-pro-256k",
+    "doubao-1.5-lite-128k"
   ]
 }

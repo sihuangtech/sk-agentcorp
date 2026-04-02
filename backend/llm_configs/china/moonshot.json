@@ -1,10 +1,10 @@
 {
+  "display_name": "Moonshot (Kimi)",
   "api_base": "https://api.moonshot.cn/v1",
-  "default_model": "moonshot-v1-auto",
+  "default_model": "kimi-k2.5",
   "supported_models": [
-    "moonshot-v1-auto",
-    "moonshot-v1-8k",
-    "moonshot-v1-32k",
-    "moonshot-v1-128k"
+    "kimi-k2.5",
+    "kimi-k2-thinking",
+    "moonshot-v1-auto"
   ]
 }

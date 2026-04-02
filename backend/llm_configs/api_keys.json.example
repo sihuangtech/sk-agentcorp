@@ -4,6 +4,8 @@
   "google": "AIza...",
   "groq": "gsk-...",
   "xai": "xai-...",
+  "mistral": "...",
+  "cohere": "...",
   "ollama": "http://localhost:11434",
   "deepseek": "sk-...",
   "alibaba": "sk-...",

@@ -1,8 +1,10 @@
 {
+  "display_name": "Baichuan",
   "api_base": "https://api.baichuan-ai.com/v1",
-  "default_model": "baichuan-4",
+  "default_model": "baichuan-5",
   "supported_models": [
-    "baichuan-4",
+    "baichuan-5",
+    "baichuan-4-turbo",
     "Baichuan-NPC"
   ]
 }

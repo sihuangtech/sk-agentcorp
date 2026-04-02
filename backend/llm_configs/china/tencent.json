@@ -1,9 +1,11 @@
 {
+  "display_name": "Tencent (Hunyuan)",
   "api_base": "https://api.hunyuan.cloud.tencent.com/v1",
-  "default_model": "hunyuan-pro",
+  "default_model": "hunyuan-3-pro",
   "supported_models": [
-    "hunyuan-pro",
-    "hunyuan-standard",
+    "hunyuan-3-pro",
+    "hunyuan-3-standard",
+    "hunyuan-2-plus",
     "hunyuan-lite"
   ]
 }

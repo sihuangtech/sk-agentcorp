@@ -1,9 +1,9 @@
 {
+  "display_name": "DeepSeek",
   "api_base": "https://api.deepseek.com",
-  "default_model": "deepseek-coder",
+  "default_model": "deepseek-reasoner",
   "supported_models": [
     "deepseek-reasoner",
-    "deepseek-chat",
-    "deepseek-coder"
+    "deepseek-chat"
   ]
 }

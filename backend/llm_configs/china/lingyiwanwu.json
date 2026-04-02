@@ -1,8 +1,10 @@
 {
+  "display_name": "01.AI (Yi)",
   "api_base": "https://api.lingyiwanwu.com/v1",
-  "default_model": "yi-large",
+  "default_model": "yi-lightning-v2",
   "supported_models": [
-    "yi-large",
+    "yi-lightning-v2",
+    "yi-large-v1.5",
     "yi-medium",
     "yi-spark-v1"
   ]

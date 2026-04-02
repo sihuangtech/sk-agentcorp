@@ -97,6 +97,8 @@ langgraph_data/
 # Secrets and Local Configurations
 backend/llm_configs/api_keys.json
 !backend/llm_configs/api_keys.json.example
+backend/llm_configs/default_model.json
+!backend/llm_configs/default_model.json.example
 
 # =========================
 # System / OS

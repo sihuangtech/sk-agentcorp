@@ -96,9 +96,10 @@ Provider/model can be set globally in `.env` (`DEFAULT_LLM_PROVIDER`, `DEFAULT_L
 
 Copy `.env.example` to `.env` and configure at minimum one LLM provider API key. Key variables:
 
-- `DATABASE_URL` — SQLite path or PostgreSQL connection string
-- `OPENAI_API_KEY` / `ANTHROPIC_API_KEY` — LLM provider keys
-- `DEFAULT_LLM_PROVIDER` / `DEFAULT_LLM_MODEL` — Default model for agents
+- `DATABASE_URL` — Database connection string (defaults to SQLite)
+- LLM Provider configs and Keys are read directly from `backend/llm_configs/api_keys.json` and provider configs. Local default model is in `backend/llm_configs/default_model.json`.
+- `API_SECRET_KEY` — String to hash tokens
+- `API_KEYS` — Valid access keys for the dashboard
 - `HEARTBEAT_INTERVAL_SECONDS` — How often the system wakes up (default 300s)
 - `MAX_TASK_RETRIES` — Retries before fallback (default 3)
 - `TASK_TIMEOUT_SECONDS` — Task timeout before anti-stuck intervention (default 600s)

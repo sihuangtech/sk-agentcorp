@@ -1,4 +1,5 @@
 {
+  "display_name": "Anthropic",
   "api_base": "https://api.anthropic.com",
   "default_model": "claude-sonnet-4.6",
   "supported_models": [

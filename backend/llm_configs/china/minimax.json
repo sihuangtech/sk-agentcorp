@@ -1,8 +1,12 @@
 {
+  "display_name": "MiniMax (M2)",
   "api_base": "https://api.minimax.chat/v1",
-  "default_model": "abab6.5s-chat",
+  "default_model": "minimax-m2.7",
   "supported_models": [
-    "abab6.5s-chat",
-    "abab6.5-chat"
+    "minimax-m2.7",
+    "minimax-m2.7-highspeed",
+    "minimax-m2-her",
+    "minimax-m2.5",
+    "abab6.5s-chat"
   ]
 }

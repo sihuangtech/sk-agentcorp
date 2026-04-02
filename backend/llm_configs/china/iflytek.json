@@ -1,9 +1,10 @@
 {
+  "display_name": "iFLYTEK (Spark)",
   "api_base": "https://spark-api-open.xfyun.cn/v1",
-  "default_model": "spark-4.0-ultra",
+  "default_model": "spark-5.0-pro",
   "supported_models": [
+    "spark-5.0-pro",
     "spark-4.0-ultra",
-    "spark-v3.5",
-    "spark-v3.1"
+    "spark-v3.5"
   ]
 }

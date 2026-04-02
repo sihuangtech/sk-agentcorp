@@ -1,0 +1,10 @@
+{
+  "display_name": "Cohere",
+  "api_base": "https://api.cohere.com/v1",
+  "default_model": "command-r-plus",
+  "supported_models": [
+    "command-r-plus-08-2024",
+    "command-r-08-2024",
+    "c4ai-command-r-plus"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "display_name": "Mistral AI",
+  "api_base": "https://api.mistral.ai/v1",
+  "default_model": "mistral-large-latest",
+  "supported_models": [
+    "mistral-large-latest",
+    "mistral-small-latest",
+    "codestral-latest",
+    "pixtral-large-latest"
+  ]
+}
