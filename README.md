@@ -37,22 +37,22 @@ graph TD
         API[RESTful APIs]
         WS[WebSocket Real-time IO]
         DB[(SQLite / Postgres)]
-        Heartbeat[⏰ 24/7 Heartbeat<br/>(APScheduler)]
+        Heartbeat["24/7 Heartbeat<br/>(APScheduler)"]
     end
 
     subgraph "SK AgentCorp Core Engine (LangGraph)"
-        Controller[CEO/Supervisor Router Center]
-        State[💾 Consensus Shared Memory<br/>& Checkpointer]
-        WorkerPool[Built-in 50+ Agents<br/>(CrewAI Base)]
+        Controller["CEO/Supervisor Router Center"]
+        State["Consensus Shared Memory<br/>& Checkpointer"]
+        WorkerPool["Built-in 50+ Agents<br/>(CrewAI Base)"]
         
-        Graph{Stateful Workflow}
-        Graph -->|Delegate Task| BuildCrew[Dynamic Crew Assembly]
-        BuildCrew --> Execute[Task Execution]
-        Execute --> Verify{Structured Output Verification}
-        Verify -->|Fail/Timeout| Retry[Auto-Retry (Max 3)]
-        Retry -->|Persistent Fail| Fallback[Fallback to Supervisor Planner]
-        Verify -->|Success| DB_Record[Record Progress & Update Org Knowledge]
-        Verify -->|Over-Budget/Approval| Human[Pause & Request Board Approval]
+        Graph{"Stateful Workflow"}
+        Graph -->|Delegate Task| BuildCrew["Dynamic Crew Assembly"]
+        BuildCrew --> Execute["Task Execution"]
+        Execute --> Verify{"Structured Output Verification"}
+        Verify -->|Fail/Timeout| Retry["Auto-Retry (Max 3)"]
+        Retry -->|Persistent Fail| Fallback["Fallback to Supervisor Planner"]
+        Verify -->|Success| DB_Record["Record Progress & Update Org Knowledge"]
+        Verify -->|Over-Budget/Approval| Human["Pause & Request Board Approval"]
     end
 
     UI <--> API

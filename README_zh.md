@@ -37,22 +37,22 @@ graph TD
         API[RESTful APIs]
         WS[WebSocket 实时通讯]
         DB[(SQLite / Postgres)]
-        Heartbeat[⏰ 24/7 Heartbeat<br/>(APScheduler)]
+        Heartbeat["24/7 Heartbeat<br/>(APScheduler)"]
     end
 
     subgraph "SK AgentCorp 核心引擎 (LangGraph)"
-        Controller[CEO/主管 决策路由中心]
-        State[💾 共识共享内存<br/>& Checkpointer]
-        WorkerPool[预置 50+ 专业 Agent 库<br/>(CrewAI Base)]
+        Controller["CEO/主管 决策路由中心"]
+        State["共识共享内存<br/>& Checkpointer"]
+        WorkerPool["预置 50+ 专业 Agent 库<br/>(CrewAI Base)"]
         
-        Graph{Stateful Workflow}
-        Graph -->|委派任务| BuildCrew[动态组建 Crew]
-        BuildCrew --> Execute[执行具体任务]
-        Execute --> Verify{结构化有效性验证}
-        Verify -->|失败/超时| Retry[自动重试 (最大3次)]
-        Retry -->|仍然失败| Fallback[Fallback 至主管重新规划]
-        Verify -->|成功| DB_Record[记录进展与更新架构知识]
-        Verify -->|超预算/需人类介入| Human[暂停并请求董事会审批]
+        Graph{"Stateful Workflow"}
+        Graph -->|委派任务| BuildCrew["动态组建 Crew"]
+        BuildCrew --> Execute["执行具体任务"]
+        Execute --> Verify{"结构化有效性验证"}
+        Verify -->|失败/超时| Retry["自动重试 (最大3次)"]
+        Retry -->|仍然失败| Fallback["Fallback 至主管重新规划"]
+        Verify -->|成功| DB_Record["记录进展与更新架构知识"]
+        Verify -->|超预算/需人类介入| Human["暂停并请求董事会审批"]
     end
 
     UI <--> API
