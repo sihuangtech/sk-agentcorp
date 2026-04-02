@@ -1,0 +1,9 @@
+{
+  "api_base": "https://spark-api-open.xfyun.cn/v1",
+  "default_model": "spark-4.0-ultra",
+  "supported_models": [
+    "spark-4.0-ultra",
+    "spark-v3.5",
+    "spark-v3.1"
+  ]
+}

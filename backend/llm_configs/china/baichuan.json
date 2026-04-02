@@ -1,0 +1,8 @@
+{
+  "api_base": "https://api.baichuan-ai.com/v1",
+  "default_model": "baichuan-4",
+  "supported_models": [
+    "baichuan-4",
+    "Baichuan-NPC"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "api_base": "https://api.sensenova.cn/v1",
+  "default_model": "SenseNova-5.0",
+  "supported_models": [
+    "SenseNova-5.0",
+    "SenseNova-5.0-vision"
+  ]
+}

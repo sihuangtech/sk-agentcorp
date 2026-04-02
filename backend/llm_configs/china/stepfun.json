@@ -1,0 +1,8 @@
+{
+  "api_base": "https://api.stepfun.com/v1",
+  "default_model": "step-2-16k",
+  "supported_models": [
+    "step-2-16k",
+    "step-1v-8k"
+  ]
+}

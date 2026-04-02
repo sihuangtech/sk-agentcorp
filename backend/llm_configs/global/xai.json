@@ -1,0 +1,8 @@
+{
+  "api_base": "https://api.x.ai/v1",
+  "default_model": "grok-4.20-beta",
+  "supported_models": [
+    "grok-4.20-beta",
+    "grok-core"
+  ]
+}

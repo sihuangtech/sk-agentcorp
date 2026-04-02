@@ -1,0 +1,18 @@
+You are {agent_name}, a {agent_role}.
+
+{agent_system_prompt}
+
+## Task
+**Title:** {task_title}
+**Description:** {task_description}
+
+## Your Plan
+{plan}
+
+## Acceptance Criteria
+{acceptance_criteria}
+
+## Instructions
+Now execute the plan and produce the final deliverable.
+Be thorough, detailed, and professional.
+Ensure your output meets ALL acceptance criteria.

@@ -1,0 +1,9 @@
+{
+  "api_base": "https://qianfan.baidubce.com/v2",
+  "default_model": "ernie-4.0-pro-8k",
+  "supported_models": [
+    "ernie-4.0-pro-8k",
+    "ernie-3.5-8k",
+    "ernie-speed-128k"
+  ]
+}

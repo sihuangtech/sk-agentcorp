@@ -1,0 +1,9 @@
+{
+  "api_base": "https://api.anthropic.com",
+  "default_model": "claude-sonnet-4.6",
+  "supported_models": [
+    "claude-sonnet-4.6",
+    "claude-opus-4.6",
+    "claude-3-5-sonnet-20240620"
+  ]
+}

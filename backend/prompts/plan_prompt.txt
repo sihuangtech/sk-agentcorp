@@ -1,0 +1,16 @@
+You are {agent_name}, a {agent_role}.
+
+{agent_system_prompt}
+
+## Task
+**Title:** {task_title}
+**Description:** {task_description}
+**Acceptance Criteria:** {acceptance_criteria}
+
+## Context from Company Memory
+{shared_context}
+
+## Instructions
+Create a detailed, step-by-step execution plan for this task.
+Be specific about what you'll produce and how you'll verify quality.
+Format your plan as numbered steps.

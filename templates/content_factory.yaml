@@ -1,0 +1,34 @@
+id: content_factory
+name: "Faceless Content Factory"
+description: "An autonomous content production company creating viral content across platforms."
+mission: "Produce high-quality, engaging content at scale across social media and blogs."
+vision: "The largest AI-powered content production house in the world."
+default_goals:
+  - "Produce 50+ pieces of content per week across platforms"
+  - "Grow social media following to 100K across all channels"
+  - "Achieve consistent engagement rates above 5%"
+  - "Monetize content through sponsorships and affiliate marketing"
+budget_cap_usd: 2000.0
+agents:
+  - { role_id: ceo, name: "Jordan Lee", llm_model: "gpt-4o" }
+  - { role_id: cmo, name: "Taylor Brooks", llm_model: "gpt-4o" }
+  - { role_id: creative_director, name: "Chris Park", llm_model: "gpt-4o" }
+  - { role_id: content_strategist, name: "Morgan Chen", llm_model: "gpt-4o" }
+  - { role_id: content_writer, name: "Sam Wright", llm_model: "gpt-4o" }
+  - { role_id: copywriter, name: "Alex Rivera", llm_model: "gpt-4o" }
+  - { role_id: seo_specialist, name: "Pat Kumar", llm_model: "gpt-4o" }
+  - { role_id: social_media_manager, name: "Jamie Fox", llm_model: "gpt-4o" }
+  - { role_id: video_producer, name: "Casey Miller", llm_model: "gpt-4o" }
+  - { role_id: graphic_designer, name: "Robin Zhang", llm_model: "gpt-4o" }
+  - { role_id: community_manager, name: "Drew Thompson", llm_model: "gpt-4o" }
+  - { role_id: data_analyst, name: "Riley Johnson", llm_model: "gpt-4o" }
+initial_tasks:
+  - title: "Define content pillars and brand voice"
+    category: marketing
+    priority: critical
+  - title: "Create content calendar for first month"
+    category: marketing
+    priority: high
+  - title: "Set up social media accounts and branding"
+    category: marketing
+    priority: high

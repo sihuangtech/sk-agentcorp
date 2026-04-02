@@ -1,0 +1,9 @@
+{
+  "api_base": "https://open.bigmodel.cn/api/paas/v4",
+  "default_model": "glm-4",
+  "supported_models": [
+    "glm-4",
+    "glm-4v",
+    "glm-3-turbo"
+  ]
+}

@@ -1,0 +1,124 @@
+# =========================
+# Backend (Python / FastAPI)
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.env
+.venv/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing, type checking, and logs
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+
+# =========================
+# Frontend (Node / React / Vite)
+# =========================
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+build/
+frontend/build/
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.eslintcache
+.stylelintcache
+
+# Vite environment variables and cache
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+frontend/.env.local
+frontend/.env.*.local
+frontend/dist-ssr/
+frontend/*.local
+
+# =========================
+# SK AgentCorp Specific Data
+# =========================
+# Local databases and shared memory
+*.db
+*.sqlite
+*.sqlite3
+backend/sk-agentcorp.db
+
+# LangGraph checkpoints & logs
+.langgraph/
+.checkpoints/
+checkpoints.sqlite
+langgraph_data/
+
+# Application generated files
+/data/
+/logs/
+/backend/logs/
+/tmp/
+/temp/
+
+# Secrets and Local Configurations
+backend/llm_configs/api_keys.json
+!backend/llm_configs/api_keys.json.example
+
+# =========================
+# System / OS
+# =========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+ehthumbs_vista.db
+Thumbs.db
+desktop.ini
+
+# =========================
+# IDEs & Editors
+# =========================
+.idea/
+.vscode/
+*.code-workspace
+*.swp
+*.swo
+*~
+.fleet/
+.history/

@@ -1,0 +1,22 @@
+{
+  "openai": "sk-...",
+  "anthropic": "sk-ant-...",
+  "google": "AIza...",
+  "groq": "gsk-...",
+  "xai": "xai-...",
+  "ollama": "http://localhost:11434",
+  "deepseek": "sk-...",
+  "alibaba": "sk-...",
+  "zhipu": "...",
+  "moonshot": "sk-...",
+  "baichuan": "...",
+  "minimax": "...",
+  "stepfun": "...",
+  "sensetime": "...",
+  "baidu": "...",
+  "tencent": "...",
+  "bytedance": "...",
+  "iflytek": "...",
+  "lingyiwanwu": "...",
+  "360": "..."
+}

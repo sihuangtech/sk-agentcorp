@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #f59e0b;
+  --color-brand-secondary: #d97706;
+  --color-brand-dark: #0f172a;
+  --color-brand-bg: #020617;
+  --color-brand-card: #1e293b;
+
+  --font-sans: "Inter", "Inter Variable", system-ui, -apple-system, sans-serif;
+}
+
+/* ── Base Styles ─────────────────────────────────────────── */
+
+* {
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+body {
+  background-color: #020617;
+  color: #e2e8f0;
+  font-family: "Inter", "Inter Variable", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image:
+    radial-gradient(at 0% 0%, rgba(245, 158, 11, 0.05) 0px, transparent 50%),
+    radial-gradient(at 50% 0%, rgba(30, 41, 59, 1) 0px, transparent 50%);
+  min-height: 100vh;
+}
+
+/* ── Custom Scrollbar ───────────────────────────────────── */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* ── Component Utilities ────────────────────────────────── */
+
+@utility glass-card {
+  background-color: rgba(30, 41, 59, 0.5);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+@utility premium-button {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.premium-button:hover {
+  transform: scale(1.05);
+}
+
+.premium-button:active {
+  transform: scale(0.95);
+}
+
+@utility premium-gradient-text {
+  background-image: linear-gradient(to bottom right, #fde68a, #f59e0b, #d97706);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ── Animations ─────────────────────────────────────────── */
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@utility animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@utility animate-shimmer {
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+/* ── React Flow Overrides ───────────────────────────────── */
+
+.react-flow__node {
+  border-radius: 12px !important;
+  border: none !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+}
+
+.react-flow__edge-path {
+  stroke: rgba(245, 158, 11, 0.3) !important;
+  stroke-width: 2 !important;
+}
+
+.react-flow__handle {
+  background-color: #f59e0b !important;
+}

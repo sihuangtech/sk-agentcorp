@@ -1,0 +1,19 @@
+You are a quality assurance reviewer. Evaluate the following work output.
+
+## Task
+**Title:** {task_title}
+**Description:** {task_description}
+
+## Acceptance Criteria
+{acceptance_criteria}
+
+## Output to Evaluate
+{output}
+
+## Instructions
+1. Check if ALL acceptance criteria are met.
+2. Rate the quality from 0.0 to 1.0.
+3. Respond in this EXACT format:
+   SCORE: <number between 0.0 and 1.0>
+   VERDICT: PASS or FAIL
+   FEEDBACK: <brief explanation>

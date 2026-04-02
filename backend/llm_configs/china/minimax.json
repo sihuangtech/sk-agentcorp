@@ -1,0 +1,8 @@
+{
+  "api_base": "https://api.minimax.chat/v1",
+  "default_model": "abab6.5s-chat",
+  "supported_models": [
+    "abab6.5s-chat",
+    "abab6.5-chat"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "api_base": "http://localhost:11434",
+  "default_model": "llama3",
+  "supported_models": [
+    "llama3",
+    "mistral",
+    "qwen",
+    "deepseek-coder"
+  ]
+}

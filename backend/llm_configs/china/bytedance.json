@@ -1,0 +1,8 @@
+{
+  "api_base": "https://ark.cn-beijing.volces.com/api/v3",
+  "default_model": "doubao-pro-128k",
+  "supported_models": [
+    "doubao-pro-128k",
+    "doubao-lite-32k"
+  ]
+}

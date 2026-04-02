@@ -1,0 +1,9 @@
+{
+  "api_base": "https://api.hunyuan.cloud.tencent.com/v1",
+  "default_model": "hunyuan-pro",
+  "supported_models": [
+    "hunyuan-pro",
+    "hunyuan-standard",
+    "hunyuan-lite"
+  ]
+}

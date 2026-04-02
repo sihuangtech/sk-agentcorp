@@ -1,0 +1,36 @@
+id: marketing_agency
+name: "Digital Marketing Agency"
+description: "A full-service autonomous digital marketing agency."
+mission: "Deliver measurable marketing results for clients through AI-powered campaigns."
+vision: "The most data-driven marketing agency, powered entirely by AI."
+default_goals:
+  - "Acquire 10 marketing clients in the first quarter"
+  - "Deliver measurable ROI for all client campaigns"
+  - "Build a reputation for data-driven marketing excellence"
+  - "Achieve 95% client retention rate"
+budget_cap_usd: 3000.0
+agents:
+  - { role_id: ceo, name: "Olivia Wang", llm_model: "gpt-4o" }
+  - { role_id: cmo, name: "Nathan Brooks", llm_model: "gpt-4o" }
+  - { role_id: cfo, name: "Linda Chen", llm_model: "gpt-4o" }
+  - { role_id: marketing_director, name: "Kevin Park", llm_model: "gpt-4o" }
+  - { role_id: seo_specialist, name: "Amy Zhang", llm_model: "gpt-4o" }
+  - { role_id: content_writer, name: "Brian Miller", llm_model: "gpt-4o" }
+  - { role_id: copywriter, name: "Diana Ross", llm_model: "gpt-4o" }
+  - { role_id: social_media_manager, name: "Eric Kim", llm_model: "gpt-4o" }
+  - { role_id: email_marketer, name: "Fiona Lee", llm_model: "gpt-4o" }
+  - { role_id: growth_hacker, name: "Greg Johnson", llm_model: "gpt-4o" }
+  - { role_id: brand_strategist, name: "Hannah Davis", llm_model: "gpt-4o" }
+  - { role_id: sales_director, name: "Ian Wilson", llm_model: "gpt-4o" }
+  - { role_id: account_executive, name: "Julia Roberts", llm_model: "gpt-4o" }
+  - { role_id: data_analyst, name: "Karl Schmidt", llm_model: "gpt-4o" }
+initial_tasks:
+  - title: "Define agency positioning and service packages"
+    category: marketing
+    priority: critical
+  - title: "Build agency website with case studies"
+    category: engineering
+    priority: high
+  - title: "Create lead generation funnel"
+    category: sales
+    priority: high

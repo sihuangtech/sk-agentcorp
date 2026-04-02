@@ -1,0 +1,9 @@
+{
+  "api_base": "https://api.groq.com/openai/v1",
+  "default_model": "groq-compound",
+  "supported_models": [
+    "groq-compound",
+    "gpt-oss-120b",
+    "llama3-70b-8192"
+  ]
+}
