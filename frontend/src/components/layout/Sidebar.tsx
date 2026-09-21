@@ -10,8 +10,6 @@ import {
   Zap, 
   ChevronLeft, 
   ChevronRight,
-  PlusCircle,
-  Building2,
   Command
 } from 'lucide-react'
 import { clsx, type ClassValue } from 'clsx'

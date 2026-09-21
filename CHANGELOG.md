@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.0] - 2026-09-21
+
+### Changed
+
+- **Frontend dependencies upgraded**: All frontend packages bumped to their latest versions, including React 19.3, Vite 8.3, Tailwind CSS 4.3, and TypeScript 7.0.
+- **Lint toolchain migrated to oxlint**: Replaced ESLint + typescript-eslint with oxlint, a Rust-native linter with first-class TypeScript support, to stay compatible with the latest TypeScript release. The `lint` script, config (`.oxlintrc.json`), and `package-lock.json` were updated accordingly.
+- **Backend dependencies upgraded**: All Python dependencies updated to their latest versions and a `uv.lock` lockfile added for reproducible installs.
+- **Removed CrewAI**: Dropped the unused `crewai` dependency, which capped `pydantic` below 2.13, allowing `pydantic` to remain at the latest 2.13.5.
+- **Database driver fixes**: `DATABASE_URL` now uses the explicit `sqlite+aiosqlite` async driver, and `greenlet` was added explicitly since the new SQLAlchemy async engine requires it.
+
 ## [0.0.1] - 2026-04-02
 
 ### Added

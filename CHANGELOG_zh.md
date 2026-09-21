@@ -4,6 +4,16 @@
 
 本日志的格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/) 规范构建，并严格遵循 [Semantic Versioning](https://semver.org/spec/v2.0.0.html) 语义化版本控制。
 
+## [0.1.0] - 2026-09-21
+
+### 🚀 变更 (Changed)
+
+- **前端依赖全线升级**：所有前端依赖已升级至最新版本，包括 React 19.3、Vite 8.3、Tailwind CSS 4.3 与 TypeScript 7.0。
+- **Lint 工具链迁移至 oxlint**：为兼容最新版 TypeScript，已将 ESLint + typescript-eslint 全面替换为 Rust 原生的 oxlint（对 TS 有着一流的原生支持），并同步更新了 `lint` 脚本、`.oxlintrc.json` 配置与 `package-lock.json`。
+- **后端依赖全线升级**：全部 Python 依赖升级至最新版，并新增 `uv.lock` 锁定文件，保证依赖安装的可复现性。
+- **移除 CrewAI**：删除未实际使用的 `crewai` 依赖（其将 pydantic 限制在 2.13 以下），从而使 pydantic 得以保持最新版 2.13.5。
+- **数据库驱动修复**：`DATABASE_URL` 改为显式使用 `sqlite+aiosqlite` 异步驱动；同时显式引入 `greenlet`，以适配新版 SQLAlchemy 异步引擎的运行要求。
+
 ## [0.0.1] - 2026-04-02
 
 ### ✨ 新增 (Added)

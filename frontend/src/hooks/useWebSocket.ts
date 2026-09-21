@@ -9,6 +9,7 @@ import type { WSMessage } from '../lib/types'
 export function useWebSocket() {
   const wsRef = useRef<WebSocket | null>(null)
   const reconnectTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
+  const connectRef = useRef<() => void>(() => {})
   const activeCompanyId = usePhantomStore((s) => s.activeCompanyId)
   const loadCompanyData = usePhantomStore((s) => s.loadCompanyData)
   const fetchDashboardStats = usePhantomStore((s) => s.fetchDashboardStats)
@@ -51,13 +52,18 @@ export function useWebSocket() {
 
     ws.onclose = () => {
       console.log('[WS] Disconnected, reconnecting in 3s...')
-      reconnectTimer.current = setTimeout(connect, 3000)
+      reconnectTimer.current = setTimeout(connectRef.current, 3000)
     }
 
     ws.onerror = () => {
       ws.close()
     }
   }, [activeCompanyId, loadCompanyData, fetchDashboardStats])
+
+  // 通过 effect 保持最新 connect 引用，供 ws.onclose 重连回调使用
+  useEffect(() => {
+    connectRef.current = connect
+  }, [connect])
 
   useEffect(() => {
     connect()
