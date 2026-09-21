@@ -8,7 +8,7 @@ requires-python = ">=3.11"
 authors = [
     {name = "SK AgentCorp Contributors"},
 ]
-keywords = ["ai", "agents", "autonomous", "company", "langgraph", "crewai"]
+keywords = ["ai", "agents", "autonomous", "company", "langgraph"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",

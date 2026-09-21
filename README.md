@@ -43,7 +43,7 @@ graph TD
     subgraph "SK AgentCorp Core Engine (LangGraph)"
         Controller["CEO/Supervisor Router Center"]
         State["Consensus Shared Memory<br/>& Checkpointer"]
-        WorkerPool["Built-in 50+ Agents<br/>(CrewAI Base)"]
+        WorkerPool["Built-in 50+ Agents<br/>(YAML Role Library)"]
         
         Graph{"Stateful Workflow"}
         Graph -->|Delegate Task| BuildCrew["Dynamic Crew Assembly"]
@@ -93,9 +93,8 @@ cp backend/llm_configs/default_model.json.example backend/llm_configs/default_mo
 #### 2. Start Backend Engine
 
 ```bash
-cd backend
-pip install -r requirements.txt # (or uv pip install)
-uvicorn main:app --reload --port 8000
+uv sync  # install locked dependencies from uv.lock
+uv run uvicorn backend.main:app --reload --port 8000
 ```
 
 #### 3. Start Frontend Dashboard

@@ -43,7 +43,7 @@ graph TD
     subgraph "SK AgentCorp 核心引擎 (LangGraph)"
         Controller["CEO/主管 决策路由中心"]
         State["共识共享内存<br/>& Checkpointer"]
-        WorkerPool["预置 50+ 专业 Agent 库<br/>(CrewAI Base)"]
+        WorkerPool["预置 50+ 专业 Agent 库<br/>(YAML 角色配置)"]
         
         Graph{"Stateful Workflow"}
         Graph -->|委派任务| BuildCrew["动态组建 Crew"]
@@ -93,10 +93,8 @@ cp backend/llm_configs/default_model.json.example backend/llm_configs/default_mo
 #### 2. 启动后端引擎
 
 ```bash
-# 推荐使用 uv 或 poetry
-cd backend
-pip install -r requirements.txt # 或 uv pip install
-uvicorn main:app --reload --port 8000
+uv sync  # 依据 uv.lock 安装锁定依赖
+uv run uvicorn backend.main:app --reload --port 8000
 ```
 
 #### 3. 启动前端 Dashboard
